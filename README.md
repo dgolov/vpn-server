@@ -10,6 +10,8 @@ https://docs.docker.com/desktop/install/linux-install/
 
 https://docs.docker.com/compose/install/linux/
 
+## Run vpn server
+
 ```commandline
 docker compose up -d
 ```
