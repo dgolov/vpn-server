@@ -1,0 +1,29 @@
+services:
+  wireguard:
+    image: linuxserver/wireguard
+    container_name: wireguard
+    restart: always
+    ports:
+      - "51820:51820/udp"
+    volumes:
+      - /root/docker/wireguard/config:/config
+      - /lib/modules:/lib/modules
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Moscow
+      - SERVERURL=auto
+      - SERVERPORT=51820
+      - PEERS=50
+      - PEERDNS=auto
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+  socks5:
+    image: serjs/go-socks5-proxy
+    container_name: socks5
+    restart: always
+    ports:
+      - "51345:1080"
