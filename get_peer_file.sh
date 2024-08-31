@@ -7,4 +7,4 @@ PEER_NUMBER=$1
 
 echo "Loading peer: $PEER_NUMBER file"
 
-cat ~/docker/wireguard/config/peer$PEER_NUMBER/peer$PEER_NUMBER.conf
+cat /root/docker/wireguard/config/peer$PEER_NUMBER/peer$PEER_NUMBER.conf
