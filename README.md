@@ -10,6 +10,16 @@ https://docs.docker.com/desktop/install/linux-install/
 
 https://docs.docker.com/compose/install/linux/
 
+## Grant execute permissions to files
+
+```commandline
+sudo chmod +x get_peer_file.sh 
+```
+
+```commandline
+sudo chmod +x show_peer.sh 
+```
+
 ## Run vpn server
 
 ```commandline
@@ -21,23 +31,23 @@ By default, up to 50 peers can connect to your VPN server
 ## Getting QR code of peer config
 
 ```commandline
-./show_peer.sh <peer_number>
+sudo ./show_peer.sh <peer_number>
 ```
 
 For example:
 
 ```commandline
-./show_peer.sh 1
+sudo ./show_peer.sh 1
 ```
 
 ## Getting peer config file
 
 ```commandline
-./get_peer_file.sh <peer_number>
+sudo ./get_peer_file.sh <peer_number>
 ```
 
 For example:
 
 ```commandline
-./get_peer_file.sh 1
+sudo ./get_peer_file.sh 1
 ```
