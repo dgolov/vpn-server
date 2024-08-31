@@ -28,6 +28,8 @@ docker compose up -d
 
 By default, up to 50 peers can connect to your VPN server
 
+---
+
 ## Getting QR code of peer config
 
 ```commandline
