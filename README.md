@@ -54,6 +54,7 @@ For example:
 sudo ./get_peer_file.sh 1
 ```
 
+---
 
 ## Generate new public/private keys for peers
 
