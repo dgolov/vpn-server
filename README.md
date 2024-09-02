@@ -56,7 +56,9 @@ sudo ./get_peer_file.sh 1
 
 ---
 
-## Generate new public/private keys for peers
+## Generating new public/private keys for peers
+
+Keys are generated automatically. This functionality is needed to replace existing keys.
 
 ```commandline
 docker exec -it wireguard /bin/sh
