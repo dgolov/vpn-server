@@ -4,7 +4,7 @@ services:
     container_name: wireguard
     restart: always
     ports:
-      - "51820:51820/udp"
+      - "61820:61820/udp"
     volumes:
       - /root/docker/wireguard/config:/config
       - /lib/modules:/lib/modules
