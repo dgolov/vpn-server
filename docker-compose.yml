@@ -13,7 +13,7 @@ services:
       - PGID=1000
       - TZ=Europe/Moscow
       - SERVERURL=auto
-      - SERVERPORT=51820
+      - SERVERPORT=61820
       - PEERS=50
       - PEERDNS=auto
     sysctls:
